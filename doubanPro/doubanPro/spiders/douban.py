@@ -12,8 +12,8 @@ class DoubanSpider(scrapy.Spider):
         # 将请求参数封装到字典
         data = {
             'source': 'index_nav',
-            'form_email': '18896541085',
-            'form_password': 'jianer8023sun.'
+            'form_email': 'xxx',
+            'form_password': 'xxx.'
         }
         for url in self.start_urls:
             yield scrapy.FormRequest(url=url, formdata=data, callback=self.parse)
